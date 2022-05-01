@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DotIndicatorView">
+        <attr name="active_dot_color" format="color" />
+        <attr name="inactive_dot_color" format="color" />
+        <attr name="normal_dot_size" format="dimension" />
+        <attr name="small_dot_size" format="dimension" />
+        <attr name="dot_margin" format="dimension" />
+        <attr name="base_visible_dot_count" format="integer" />
+    </declare-styleable>
+</resources>

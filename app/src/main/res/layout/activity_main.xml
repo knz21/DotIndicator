@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText,ButtonStyle">
+
+    <com.knz21.dotindicator.DotIndicatorView
+        android:id="@+id/indicator1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" />
+
+    <com.knz21.dotindicator.DotIndicatorView
+        android:id="@+id/indicator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:active_dot_color="@color/purple_700"
+        app:base_visible_dot_count="20"
+        app:dot_margin="2dp"
+        app:inactive_dot_color="@color/purple_200"
+        app:normal_dot_size="12dp"
+        app:small_dot_size="8dp" />
+
+    <com.knz21.dotindicator.DotIndicatorView
+        android:id="@+id/indicator3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:active_dot_color="@color/teal_700"
+        app:base_visible_dot_count="4"
+        app:dot_margin="12dp"
+        app:inactive_dot_color="@color/teal_200"
+        app:normal_dot_size="20dp"
+        app:small_dot_size="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+    </LinearLayout>
+</LinearLayout>
